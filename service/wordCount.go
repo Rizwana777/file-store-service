@@ -8,13 +8,14 @@ import (
 	"strings"
 )
 
+// Change directory path replace "/home/rizwana" to ypur path
+const dirCount = "/home/rizwana/file-store-service/service/"
+
 func WordCount(str string) error {
 	filename := strings.Split(str, " ")
-	fmt.Println(filename)
-
-	fh, err := os.Open(filename[2])
+	fh, err := os.Open(dirCount + filename[2])
 	if err != nil {
-		fmt.Printf("Could not open file '%v': %v", filename, err)
+		fmt.Printf("Could not open file '%v': %v", filename[2], err)
 		os.Exit(1)
 	}
 	reader := bufio.NewReader(fh)

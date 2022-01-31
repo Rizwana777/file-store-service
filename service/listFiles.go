@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 )
 
+// Change directory name here, add pwd
 const dir = "/home/rizwana/file-store-service"
 
 func ListFiles() error {
