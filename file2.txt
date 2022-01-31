@@ -1,0 +1,1 @@
+[[store add file1.txt file2.txt]]: Hello world [store add file1.txt file2.txt]
